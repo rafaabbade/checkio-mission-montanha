@@ -1,18 +1,20 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Um sistema de informações geográficas computadorizado representa o perfil de uma montanha através de uma sequência de números inteiros, onde não há dois números consecutivos iguais. Seu programa deve analisar essa sequência para determinar se a montanha representada tem mais de um pico, ou apenas um único pico. Uma montanha tem mais de um pico se existirem três números consecutivos na sequência onde o número do meio é menor que os outros dois.
+
+
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista na qual o primeiro elemento é um inteiro N representando o tamanho da sequência. O segundo elemento é uma lista de N inteiros A, representando as alturas da montanha ao longo da sequência.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Uma string contendo um único caractere: 'S' se a montanha tem mais de um pico, ou 'N' se a montanha tem apenas um pico.
 </p>
 
 
@@ -28,7 +30,8 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    montanha(8, [2, 3, 5, 6, 7, 5, 4, 2]) >> 'N'
+montanha(8, [2, 3, 6, 5, 4, 6, 3, 2]) >> 'S'
 </pre>
 {% endif %}
 </div>
